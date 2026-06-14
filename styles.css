@@ -1,2 +1,8 @@
 body{
-  background: linear-gradient( 
+  background: linear-gradient(135deg,#fff0f6,#eaf7ff);
+  font-family: Arial, sans-serif;
+  margin:0;
+}
+
+nav{
+  backround:
