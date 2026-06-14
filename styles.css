@@ -4,5 +4,13 @@ body{
 } 
 nav{
   text-align:center;
-  
+  background-color:light pink;
+  padding:15px;
+}  
+
+nav a{
+  color:black;
+  text-decoraction:none;
+  margin:20px;
+  font-size:18px;
 } 
