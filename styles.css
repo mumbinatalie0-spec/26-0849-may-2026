@@ -22,6 +22,7 @@ nav a {
 }
 
 .container {
+    text-align: center;
     background-color: lavender;
     margin: 20px;
     padding: 20px;
@@ -29,6 +30,7 @@ nav a {
 }
 
 table {
+    margin: auto;
     width: 50%;
     border-collapse: collapse;
 }
@@ -52,6 +54,7 @@ tr:nth-child(even) {
     display: grid;
     grid-template-columns: 4fr 4fr;
     gap: 15px;
+    justify-content: center;
 } 
 
 .gallery img {
