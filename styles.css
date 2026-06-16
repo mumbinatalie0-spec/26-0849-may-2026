@@ -1,60 +1,68 @@
-body{ 
-  margin: 0;
-  background-color:navy blue;
-  font-family:Arial, sans-serif;
-} 
-  
-nav{
-  text-align:center;
-  background-color:pink;
-  padding:15px;
-}  
-
-nav a{
-  color:white;
-  text-decoraction:none;
-  margin:15px;
-  font-weight:bold;
-} 
-
-.container{
-  background-color:lavender;
-  margn: 20px;
-  padding: 20px;
-  border-radius: 15px:
-} 
-
-table{
-  width:50%;
-  border-collapse:collapse;
-}
-th{
-  background-color:lavender;
-  color:white;
-}
-tr:nth-child(even){
-  background-color:pink;
+body {
+    margin: 0;
+    background-color: navy;
+    font-family: Arial, sans-serif;
 }
 
-.gallery{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
+nav {
+    text-align: center;
+    background-color: pink;
+    padding: 15px;
 }
 
-.gallery img{
-  width: 50%;
-  border-radius; 10px;
-} 
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
 
-  sections{
-    text-align: center:
+.container {
+    background-color: lavender;
+    margin: 20px;
     padding: 20px;
-  } 
+    border-radius: 15px;
+}
 
-  footer{
-  text-align: center;
-  background: light blue;
-  padding: 15px;
-  margin-top: 20px;
-} 
+table {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: lavender;
+    color: white;
+}
+
+td,
+th {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: pink;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+section {
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: lightblue;
+    padding: 15px;
+    margin-top: 20px;
+}
