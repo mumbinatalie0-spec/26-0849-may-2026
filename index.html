@@ -6,124 +6,176 @@
 </head>
 <body>
 
-    <h1>Mumbi's Thrift Haven</h1>
-    <hr>
+    <!-- ── Header ── -->
+    <header>
+        <h1>Mumbi's Thrift Haven</h1>
+        <div class="tagline">Pre-loved fashion, brand-new confidence 🤎</div>
+        <div class="badge">✦ Sustainable · Stylish · Affordable ✦</div>
+    </header>
 
-    <p>Welcome to our online thrift shop where customers can buy affordable second hand clothes,
-    shoes and bags from the comfort of their homes.<br>
-    Our shop offers stylish and quality fashion items at affordable prices.<br>
-    Customers can browse products online to view our prices and place orders easily.</p>
-
-    <!-- ── Navigation (centred) ── -->
+    <!-- ── Nav ── -->
     <nav>
-        <a href="#home">Home</a> |
-        <a href="#products">Products</a> |
-        <a href="#about">About</a> |
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <hr>
-
+    <!-- ── Home ── -->
     <section id="home">
-        <h2>Home</h2>
-        <p>Welcome to our online thrift shop where customers can buy affordable
-        second-hand clothes, shoes and bags.</p>
+        <h2>Welcome</h2>
+        <div class="intro-text">
+            Welcome to our online thrift shop where customers can buy affordable second-hand clothes,
+            shoes and bags from the comfort of their homes. Our shop offers stylish and quality fashion
+            items at pocket-friendly prices. Browse our collection online, view our prices, and place
+            your order easily — vintage treasures are just a click away! ✨
+        </div>
     </section>
 
+    <hr class="divider">
+
+    <!-- ── Products ── -->
     <section id="products">
-        <h2>Products</h2>
-        <ul>
-            <li>Dresses</li>
-            <li>Shoes</li>
-            <li>Skirts</li>
-            <li>Tops</li>
-            <li>Bags</li>
-            <li>Jackets</li>
-        </ul>
+        <h2>Our Collection</h2>
+        <div class="lists-row">
+            <ul class="card">
+                <h3>🛍️ Browse Categories</h3>
+                <li>Dresses</li>
+                <li>Shoes</li>
+                <li>Skirts</li>
+                <li>Tops</li>
+                <li>Bags</li>
+                <li>Jackets</li>
+            </ul>
+            <ol class="card">
+                <h3>🛒 How to Order</h3>
+                <li>Select your items</li>
+                <li>Add to cart</li>
+                <li>Review your order</li>
+                <li>Make payment</li>
+                <li>Receive your items</li>
+            </ol>
+        </div>
     </section>
 
+    <hr class="divider">
+
+    <!-- ── Price Table ── -->
+    <section>
+        <h2>Price List</h2>
+        <div class="table-wrap">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Availability</th>
+                </tr>
+                <tr><td>Dress</td><td>Kes 500</td><td>Available</td></tr>
+                <tr><td>Shoes</td><td>Kes 200</td><td>Available</td></tr>
+                <tr><td>Jacket</td><td>Kes 1,000</td><td>Available</td></tr>
+                <tr><td>Bags</td><td>Kes 1,500</td><td>Available</td></tr>
+                <tr><td>Jeans</td><td>Kes 800</td><td>Available</td></tr>
+                <tr><td>Coats</td><td>Kes 2,200</td><td>Available</td></tr>
+            </table>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ── Image Gallery (2-col grid) ── -->
+    <section id="gallery">
+        <h2>The Lookbook</h2>
+        <div class="gallery">
+            <figure>
+                <img src="./dresses.jpeg" alt="Dresses">
+                <figcaption>Vintage Dresses</figcaption>
+            </figure>
+            <figure>
+                <img src="./shoes.jpeg" alt="Shoes">
+                <figcaption>Pre-loved Shoes</figcaption>
+            </figure>
+            <figure>
+                <img src="https://media.timeout.com/images/106233588/750/422/image.jpg" alt="Thrift store">
+                <figcaption>In-store Finds</figcaption>
+            </figure>
+            <figure>
+                <img src="./jeans.jpeg" alt="Jeans">
+                <figcaption>Classic Denim</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ── Video Grid (2-col) ── -->
+    <section>
+        <h2>Video Showcase</h2>
+        <div class="video-grid">
+            <div class="vid">
+                <iframe src="https://www.youtube.com/embed/86RShsz5gc8"
+                    title="Thrift Haul 1"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="vcap">🎬 Thrift Haul &amp; Styling</div>
+            </div>
+            <div class="vid">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    title="Thrift Haul 2"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="vcap">👗 New Arrivals Lookbook</div>
+            </div>
+        </div>
+        <div class="audio-wrap">
+            <strong>🎵 Vibe with us while you shop</strong>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ── About ── -->
     <section id="about">
         <h2>About Us</h2>
-        <p>We sell quality thrift clothing and shoes at affordable prices.</p>
+        <div class="about-box">
+            We sell quality thrift clothing and shoes at affordable prices. At Mumbi's Thrift Haven,
+            we believe great style shouldn't cost the earth — literally. Every piece is hand-picked,
+            giving pre-loved fashion a second life and helping you look amazing while shopping sustainably. 🌍🤎
+        </div>
     </section>
 
+    <hr class="divider">
+
+    <!-- ── Contact ── -->
     <section id="contact">
-        <h2>Contact</h2>
-        <p>
-            Phone: +254726790080<br>
-            Email: thriftshop@gmail.com<br>
-            Location: Nairobi, Kenya
-        </p>
+        <h2>Get In Touch</h2>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="ico">📞</div>
+                <strong>Phone</strong>
+                <span>+254 726 790 080</span>
+            </div>
+            <div class="contact-card">
+                <div class="ico">📧</div>
+                <strong>Email</strong>
+                <span>thriftshop@gmail.com</span>
+            </div>
+            <div class="contact-card">
+                <div class="ico">📍</div>
+                <strong>Location</strong>
+                <span>Nairobi, Kenya</span>
+            </div>
+        </div>
     </section>
 
-    <hr>
-
-    <h2>Unordered List</h2>
-    <ul>
-        <li>Dress</li>
-        <li>Shoes</li>
-        <li>Skirt</li>
-        <li>Tops</li>
-        <li>Bags</li>
-    </ul>
-
-    <h2>Ordered List</h2>
-    <ol>
-        <li>Select Items</li>
-        <li>Add to Cart</li>
-        <li>Review Order</li>
-        <li>Make Payment</li>
-        <li>Receive Items</li>
-    </ol>
-
-    <h2>Products Table</h2>
-    <table>
-        <tr>
-            <th>Product</th>
-            <th>Price</th>
-            <th>Availability</th>
-        </tr>
-        <tr><td>Dress</td><td>Kes 500</td><td>Available</td></tr>
-        <tr><td>Shoes</td><td>Kes 200</td><td>Available</td></tr>
-        <tr><td>Jacket</td><td>Kes 1000</td><td>Available</td></tr>
-        <tr><td>Bags</td><td>Kes 1500</td><td>Available</td></tr>
-        <tr><td>Jeans</td><td>Kes 800</td><td>Available</td></tr>
-        <tr><td>Coats</td><td>Kes 2200</td><td>Available</td></tr>
-    </table>
-
-    <!-- ── Image Gallery Grid (2 columns) ── -->
-    <h2>Images</h2>
-    <div class="gallery">
-        <img src="./dresses.jpeg" alt="Dress">
-        <img src="./shoes.jpeg" alt="Shoes">
-        <img src="https://media.timeout.com/images/106233588/750/422/image.jpg" alt="Thrift store">
-        <img src="./jeans.jpeg" alt="Jeans">
-    </div>
-
-    <!-- ── Video Grid (2 columns) ── -->
-    <h2>Video Showcase</h2>
-    <div class="video-grid">
-        <iframe src="https://www.youtube.com/embed/86RShsz5gc8"
-            title="Thrift Haul 1"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="Thrift Haul 2"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-    </div>
-
-    <!-- ── Audio ── -->
-    <div class="audio-wrap">
-        <h2>Listen</h2>
-        <audio controls>
-            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
-
+    <!-- ── Footer ── -->
     <footer>
+        <div class="socials">📸 🐦 📘 🎵</div>
         <p>&copy; 2026 Mumbi's Thrift Haven. All Rights Reserved.</p>
+        <p class="tag">Where every piece tells a story 🤎</p>
     </footer>
 
 </body>
