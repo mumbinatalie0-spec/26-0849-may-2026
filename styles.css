@@ -48,7 +48,7 @@ tr:nth-child(even) {
     display: grid;
     grid-template-columns: 4fr 4fr;
     gap: 15px;
-}
+} 
 
 .gallery img {
     width: 100%;
