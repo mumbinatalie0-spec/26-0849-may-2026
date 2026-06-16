@@ -8,6 +8,14 @@ h1{
     text-align: center;
 }
 
+h2{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
 nav {
     text-align: center;
     background-color: pink;
@@ -30,6 +38,7 @@ nav a {
 }
 
 table {
+    text-align: center;
     margin: auto;
     width: 50%;
     border-collapse: collapse;
