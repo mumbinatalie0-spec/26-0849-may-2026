@@ -9,8 +9,12 @@
     } 
     function showPromoMessage(){
         alert("Special offer: Get 10% offon your first purchase! Use code: FIRST10 at the checkout.");
-    }
-</script>
+    } 
+    window.onload = functions() {
+       showWelcomeMessage();
+        setTimeout(showPromoMessage,5000);
+    };
+</script> 
 </head>
 <body>
 
