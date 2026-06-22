@@ -10,16 +10,16 @@ body {
 
 header {
     text-align: center;
-    background-color: #f8f8f8;
+    background-color: #brown;
     padding: 20px;
 }
 
 .tagline {
     font-style: italic;
-    color: #555;
+    color: light pink;
 }
 
-.badge {
+.badge { 
     margin-top: 10px;
     font-weight: bold;
 }
@@ -27,7 +27,7 @@ header {
 /* ── Nav Styles ── */
 nav {
     text-align: center;
-    background-color: #333;
+    background-color: lavender;
     padding: 10px 0;
 }
 
@@ -44,7 +44,7 @@ section {
 }
 
 h2 {
-    color: #333;
+    color: light blue;
 }
 
 .intro-text, .about-box {
@@ -58,7 +58,7 @@ h2 {
 }
 
 .card {
-    background-color: #efefef;
+    background-color: pink;
     padding: 15px;
     border-radius: 5px;
     width: 45%;
@@ -115,7 +115,7 @@ th, td {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #f8f8f8;
+    background-color: light blue;
 }
 
 .socials {
