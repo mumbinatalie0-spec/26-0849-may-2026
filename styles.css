@@ -147,9 +147,9 @@ footer {
 
 .popup-content button{
     margin-top:15px;
-    padding:10px 15px;
+    padding:10px 15px; 
     border:none;
-    background:green;
+    background:pink;
     color:white;
     border-radius:6px;
     cursor:pointer;
