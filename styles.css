@@ -4,19 +4,20 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0 
+    margin: 0;
     padding: 0;
 }
 
 header {
     text-align: center;
-    background-color: #brown;
+    background-color: brown;
+    color: #fff5ee;
     padding: 20px;
 }
 
 .tagline {
     font-style: italic;
-    color: light pink;
+    color: lightpink;
 }
 
 .badge { 
@@ -32,9 +33,10 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #5a3a2e;
     margin: 0 15px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 /* ── Section Styles ── */
@@ -44,7 +46,7 @@ section {
 }
 
 h2 {
-    color: light blue;
+    color: #6b4f4f;
 }
 
 .intro-text, .about-box {
@@ -115,13 +117,13 @@ th, td {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: light blue;
+    background-color: lightblue;
 }
 
 .socials {
     margin-bottom: 10px;
 } 
-#formPopup{
+#promoPopup{
     display:none;
     position:fixed;
     top:0;
@@ -158,3 +160,25 @@ footer {
 
 
 
+
+/* ── Registration form (built by script.js) ── */
+.reg-intro { text-align: center; color: #6b4f4f; margin-bottom: 14px; }
+
+#register-form { max-width: 420px; margin: 0 auto; background: #fff; padding: 22px 26px;
+    border-radius: 10px; box-shadow: 0 3px 14px rgba(120,80,80,0.15); }
+
+#userForm label { display: block; font-weight: bold; color: #6b4f4f; margin: 12px 0 4px; }
+
+#userForm input, #userForm select { width: 100%; padding: 10px 12px; border: 1.5px solid #e3c9cf;
+    border-radius: 7px; font-size: 14px; outline: none; }
+#userForm input:focus, #userForm select:focus { border-color: brown; }
+
+#userForm button { margin-top: 16px; width: 100%; padding: 12px; border: none; cursor: pointer;
+    background: brown; color: #fff; font-size: 15px; font-weight: bold; border-radius: 7px; }
+#userForm button:hover { opacity: 0.9; }
+
+.error { color: #c0392b; font-size: 12px; min-height: 14px; display: block; margin-top: 3px; }
+
+.success { display: none; margin-top: 16px; padding: 12px 14px; border-radius: 8px;
+    background: #eafaf0; border-left: 4px solid #2e7d32; color: #1e5631; font-size: 14px; }
+.success.visible { display: block; }
