@@ -181,4 +181,6 @@ footer {
 
 .success { display: none; margin-top: 16px; padding: 12px 14px; border-radius: 8px;
     background: #eafaf0; border-left: 4px solid #2e7d32; color: #1e5631; font-size: 14px; }
-.success.visible { display: block; }
+.success.visible { display: block; } 
+
+
