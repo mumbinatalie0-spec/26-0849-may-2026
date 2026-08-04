@@ -1,5 +1,4 @@
 /* styles.css */
-
 /* ── General Styles ── */
 body {
     font-family: Arial, sans-serif;
@@ -7,119 +6,98 @@ body {
     margin: 0;
     padding: 0;
 }
-
 header {
     text-align: center;
     background-color: brown;
     color: #fff5ee;
     padding: 20px;
 }
-
 .tagline {
     font-style: italic;
     color: lightpink;
 }
-
 .badge { 
     margin-top: 10px;
     font-weight: bold;
 }
-
 /* ── Nav Styles ── */
 nav {
     text-align: center;
     background-color: lavender;
     padding: 10px 0;
 }
-
 nav a {
     color: #5a3a2e;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
 }
-
 /* ── Section Styles ── */
 section {
     padding: 20px;
     margin: 20px;
 }
-
 h2 {
     color: #6b4f4f;
 }
-
 .intro-text, .about-box {
     margin: 20px 0;
 }
-
 /* ── Products Styles ── */
 .lists-row {
     display: flex;
     justify-content: space-between;
 }
-
 .card {
     background-color: pink;
     padding: 15px;
     border-radius: 5px;
     width: 45%;
 }
-
 .table-wrap {
     overflow-x: auto;
 }
-
 table {
     width: 100%;
     border-collapse: collapse;
 }
-
 th, td {
     padding: 10px;
     text-align: left;
     border: 1px solid #ddd;
 }
-
 /* ── Gallery Styles ── */
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 .gallery figure {
     width: 48%;
     margin-bottom: 20px;
 }
-
 /* ── Video Styles ── */
 .video-grid {
     display: flex;
     justify-content: space-between;
 }
-
 .vid {
     width: 48%;
 }
-
 /* ── Contact Styles ── */
 .contact-grid {
     display: flex;
     justify-content: space-around;
 }
-
 .contact-card {
     text-align: center;
 }
-
 /* ── Footer Styles ── */
 footer {
     text-align: center;
     padding: 20px;
     background-color: lightblue;
 }
-
 .socials {
     margin-bottom: 10px;
 } 
@@ -135,7 +113,6 @@ footer {
     justify-content:center;
     align-items:center;
 }
-
 .popup-content{
     background:white;
     padding:30px;
@@ -146,7 +123,6 @@ footer {
     margin-top:15%;
     box-shadow:0 0 15px rgba(0,0,0,0.3);
 }
-
 .popup-content button{
     margin-top:15px;
     padding:10px 15px; 
@@ -156,31 +132,18 @@ footer {
     border-radius:6px;
     cursor:pointer;
 }
-
-
-
-
-
 /* ── Registration form (built by script.js) ── */
 .reg-intro { text-align: center; color: #6b4f4f; margin-bottom: 14px; }
-
 #register-form { max-width: 420px; margin: 0 auto; background: #fff; padding: 22px 26px;
     border-radius: 10px; box-shadow: 0 3px 14px rgba(120,80,80,0.15); }
-
 #userForm label { display: block; font-weight: bold; color: #6b4f4f; margin: 12px 0 4px; }
-
 #userForm input, #userForm select { width: 100%; padding: 10px 12px; border: 1.5px solid #e3c9cf;
     border-radius: 7px; font-size: 14px; outline: none; }
 #userForm input:focus, #userForm select:focus { border-color: brown; }
-
 #userForm button { margin-top: 16px; width: 100%; padding: 12px; border: none; cursor: pointer;
     background: brown; color: #fff; font-size: 15px; font-weight: bold; border-radius: 7px; }
 #userForm button:hover { opacity: 0.9; }
-
 .error { color: #c0392b; font-size: 12px; min-height: 14px; display: block; margin-top: 3px; }
-
 .success { display: none; margin-top: 16px; padding: 12px 14px; border-radius: 8px;
     background: #eafaf0; border-left: 4px solid #2e7d32; color: #1e5631; font-size: 14px; }
-.success.visible { display: block; } 
-
-
+.success.visible { display: block; }
