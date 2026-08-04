@@ -4,7 +4,15 @@
    2. Registration form built & validated by JavaScript
       (Full Name, Email, Phone, Gender)
       Email must be a Gmail address, e.g. natalie@gmail.com
+   3. Supabase — form submissions are saved to the
+      "registrations" table in your Supabase project.
 ══════════════════════════════════════════ */
+
+/* ── 0. SUPABASE SETUP ── */
+const SUPABASE_URL = "https://udvuakuezxgiqpwbomqj.supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_OPmR7QNDKIG4l82BXzjGpw_Luh59vFy";
+
+const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 /* ── 1. PROMOTION POPUP ── */
 window.addEventListener("load", function () {
@@ -54,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
             '</select>' +
             '<span class="error" id="err-gender"></span>' +
 
-            '<button type="submit">Register</button>' +
+            '<button type="submit" id="reg-submit-btn">Register</button>' +
             '<div class="success" id="form-success"></div>' +
         '</form>';
 
@@ -71,14 +79,15 @@ function setError(id, message) {
     if (el) el.textContent = message;
 }
 
-function handleRegister(event) {
+async function handleRegister(event) {
     event.preventDefault();
 
-    var name   = document.getElementById("reg-name");
-    var email  = document.getElementById("reg-email");
-    var phone  = document.getElementById("reg-phone");
-    var gender = document.getElementById("reg-gender");
+    var name    = document.getElementById("reg-name");
+    var email   = document.getElementById("reg-email");
+    var phone   = document.getElementById("reg-phone");
+    var gender  = document.getElementById("reg-gender");
     var success = document.getElementById("form-success");
+    var submitBtn = document.getElementById("reg-submit-btn");
 
     // clear previous messages
     ["err-name", "err-email", "err-phone", "err-gender"].forEach(function (id) {
@@ -120,6 +129,28 @@ function handleRegister(event) {
     }
 
     if (!valid) return;
+
+    // ── Save to Supabase ──
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Registering…";
+
+    var { error } = await supabaseClient
+        .from("registrations")
+        .insert([{
+            full_name: name.value.trim(),
+            email: email.value.trim(),
+            phone: phone.value.trim(),
+            gender: gender.value
+        }]);
+
+    submitBtn.disabled = false;
+    submitBtn.textContent = "Register";
+
+    if (error) {
+        console.error("Supabase insert error:", error);
+        setError("err-email", "Something went wrong saving your registration. Please try again.");
+        return;
+    }
 
     // Success
     success.textContent = "🤎 Thank you, " + name.value.trim().split(" ")[0] +
